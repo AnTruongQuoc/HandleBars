@@ -1,0 +1,24 @@
+{
+  "name": "handlebars",
+  "version": "1.0.0",
+  "description": "Group08-PTUDW",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnTruongQuoc/HandleBars.git"
+  },
+  "author": "AnTruong - GiaHung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnTruongQuoc/HandleBars/issues"
+  },
+  "homepage": "https://github.com/AnTruongQuoc/HandleBars#readme"
+}
