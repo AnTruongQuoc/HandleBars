@@ -57,7 +57,7 @@ app.get('/task4',(req,res)=>{
 })
 
 app.get('/task4-details',(req,res)=>{
-    res.locals.title = "Zodiac Characteristics"
+    res.locals.title = data.zodiacs[4]['name'] + " Characteristics"
     res.locals.name = data.zodiacs[4]['name']
     res.locals.imagePath = '/images' + data.zodiacs[4]['imagePath']
     res.locals.dates = data.zodiacs[4]['dates']
