@@ -25,7 +25,20 @@ app.get('/',(req,res)=>{
 
 app.get('/task1',(req,res)=>{
     res.locals.title = "Jars Saving"
-	res.render('task1')
+
+    
+    var sal = req.query.salary;
+  
+    var salary = {
+        play: sal*0.1,      //10
+        long_term:sal*0.1,  //10
+        edu: sal*0.1,      //10
+        give: sal*0.05,   //5
+        finan: sal*0.1,  //10
+        necess: sal*0.55 //55
+    }
+
+	res.render('task1', salary)
 })
 
 app.get('/task2',(req,res)=>{
