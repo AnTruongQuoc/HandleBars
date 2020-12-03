@@ -56,16 +56,17 @@ app.get('/task4',(req,res)=>{
 	res.render('task4')
 })
 
-app.get('/task4-details',(req,res)=>{
-    res.locals.title = data.zodiacs[4]['name'] + " Characteristics"
-    res.locals.name = data.zodiacs[4]['name']
-    res.locals.imagePath = '/images' + data.zodiacs[4]['imagePath']
-    res.locals.dates = data.zodiacs[4]['dates']
-    res.locals.strengths = data.zodiacs[4]['strengths']
-    res.locals.weaknesses = data.zodiacs[4]['weaknesses']
-    res.locals.likes = data.zodiacs[4]['likes']
-    res.locals.dislikes = data.zodiacs[4]['dislikes']
-    res.locals.description = data.zodiacs[4]['description']
+app.get('/task4-details', (req, res) => {
+    let zodiac = parseInt(req.query.zodiac.valueOf())
+    res.locals.title = data.zodiacs[zodiac]['name'] + " Characteristics"
+    res.locals.name = data.zodiacs[zodiac]['name']
+    res.locals.imagePath = '/images' + data.zodiacs[zodiac]['imagePath']
+    res.locals.dates = data.zodiacs[zodiac]['dates']
+    res.locals.strengths = data.zodiacs[zodiac]['strengths']
+    res.locals.weaknesses = data.zodiacs[zodiac]['weaknesses']
+    res.locals.likes = data.zodiacs[zodiac]['likes']
+    res.locals.dislikes = data.zodiacs[zodiac]['dislikes']
+    res.locals.description = data.zodiacs[zodiac]['description']
 	res.render('task4-details')
 })
 
